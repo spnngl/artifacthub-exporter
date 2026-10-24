@@ -1,0 +1,42 @@
+[
+  {
+    "repository_id": "d0201666-b864-44aa-8bc9-a9b5172eb5b0",
+    "name": "ah",
+    "display_name": "Artifact Hub CLI",
+    "url": "oci://index.docker.io/artifacthub/ah",
+    "kind": 12,
+    "verified_publisher": false,
+    "official": false,
+    "disabled": false,
+    "scanner_disabled": false,
+    "last_scanning_ts": 1792772281,
+    "last_tracking_ts": 1792838735,
+    "data": {
+      "tags": [
+        {
+          "name": "latest",
+          "mutable": true
+        }
+      ]
+    },
+    "organization_name": "artifacthub",
+    "organization_display_name": "Artifact Hub"
+  },
+  {
+    "repository_id": "a032a436-3568-4970-804a-2780f5e9d231",
+    "name": "artifact-hub",
+    "display_name": "Artifact Hub",
+    "url": "https://artifacthub.github.io/helm-charts/",
+    "kind": 0,
+    "verified_publisher": true,
+    "official": true,
+    "cncf": true,
+    "disabled": false,
+    "scanner_disabled": false,
+    "digest": "7e852eb3e7cb5f293a88827bb399fb42fc627298be4e312d3728cffd199bf616",
+    "last_scanning_ts": 1792835341,
+    "last_tracking_ts": 1783438533,
+    "organization_name": "artifacthub",
+    "organization_display_name": "Artifact Hub"
+  }
+]

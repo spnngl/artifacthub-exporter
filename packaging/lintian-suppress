@@ -1,0 +1,5 @@
+# The lintian errors that don't apply to the deb (.github/workflows/release.yml).
+# Built without cgo, so static by design: it runs on any distribution.
+statically-linked-binary
+# The release notes are on the GitHub release.
+no-changelog

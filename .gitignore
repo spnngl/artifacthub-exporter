@@ -1,2 +1,42 @@
 *.local*
 PLAN*.md
+
+# Build artifacts
+/artifacthub-exporter
+/dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries, coverage, profiles
+*.test
+*.out
+*.prof
+coverage.txt
+coverage.html
+
+# Go workspace
+go.work
+go.work.sum
+
+# Linter cache
+.golangci-lint-cache/
+
+# Local configuration and secrets (.env.example is tracked)
+/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+._*
+Thumbs.db
+
+# Logs
+*.log

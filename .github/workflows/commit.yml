@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/SchemaStore/schemastore/refs/heads/master/src/schemas/json/github-workflow.json
+
+# Every commit of a pull request follows Conventional Commits.
+name: conventional-commits
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions: {}
+
+jobs:
+  check:
+    permissions:
+      contents: read
+      pull-requests: read
+    uses: spnngl/.github/.github/workflows/conventional-commits.yml@main

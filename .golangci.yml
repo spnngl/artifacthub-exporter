@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://golangci-lint.run/jsonschema/golangci.jsonschema.json
+
+version: "2"
+
+linters:
+  # On top of the standard set: leaks, missing contexts and timeouts, wrapped errors.
+  enable:
+    - bodyclose
+    - errorlint
+    - gosec
+    - noctx
+    - predeclared
+    - revive
+
+formatters:
+  enable:
+    - gofmt
