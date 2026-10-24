@@ -39,7 +39,9 @@ nfpms:
     section: net
     mtime: "{{ .CommitDate }}"
     contents:
-      - src: LICENSE
+      # Debian policy: the copyright file points to /usr/share/common-licenses
+      # instead of repeating the Apache-2.0 text.
+      - src: packaging/copyright
         dst: /usr/share/doc/artifacthub-exporter/copyright
         packager: deb
         file_info:
