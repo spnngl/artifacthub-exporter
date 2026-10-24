@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/SchemaStore/schemastore/refs/heads/master/src/schemas/json/github-workflow.json
+
+# actionlint and zizmor on the workflows when they change; zizmor reads
+# .github/zizmor.yml.
+name: lint-workflows
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/**"
+  pull_request:
+    paths:
+      - ".github/**"
+
+permissions: {}
+
+jobs:
+  lint:
+    permissions:
+      contents: read
+    uses: spnngl/.github/.github/workflows/lint-workflows.yml@main

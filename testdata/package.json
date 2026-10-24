@@ -1,0 +1,31 @@
+{
+  "package_id": "75ee6e00-b4d5-429e-9d82-33ab730081ff",
+  "name": "artifact-hub",
+  "version": "1.23.0",
+  "available_versions": [
+    {
+      "version": "1.23.0",
+      "app_version": "1.23.0",
+      "ts": 1783436148
+    },
+    {
+      "version": "1.22.0",
+      "app_version": "1.22.0",
+      "ts": 1761042914
+    },
+    {
+      "version": "1.21.0",
+      "app_version": "1.21.0",
+      "ts": 1745479989
+    }
+  ],
+  "stats": {
+    "subscriptions": 21,
+    "webhooks": 4
+  },
+  "repository": {
+    "repository_id": "a032a436-3568-4970-804a-2780f5e9d231",
+    "kind": 0,
+    "name": "artifact-hub"
+  }
+}

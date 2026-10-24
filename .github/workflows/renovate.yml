@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/SchemaStore/schemastore/refs/heads/master/src/schemas/json/github-workflow.json
+
+# Validates renovate.json5 when it or this workflow changes.
+name: renovate
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - renovate.json5
+      - .github/workflows/renovate.yml
+  pull_request:
+    paths:
+      - renovate.json5
+      - .github/workflows/renovate.yml
+
+permissions: {}
+
+jobs:
+  renovate:
+    permissions:
+      contents: read
+    uses: spnngl/.github/.github/workflows/renovate.yml@main

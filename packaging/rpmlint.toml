@@ -1,0 +1,7 @@
+# The rpmlint errors that don't apply to the rpm (.github/workflows/release.yml).
+Filters = [
+    # Built without cgo, so static by design: it runs on any distribution.
+    'statically-linked-binary',
+    # The release notes are on the GitHub release.
+    'no-changelogname-tag',
+]

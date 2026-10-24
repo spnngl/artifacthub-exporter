@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/SchemaStore/schemastore/refs/heads/master/src/schemas/json/github-workflow.json
+
+# Secret scanning of the git history, findings in code scanning.
+name: betterleaks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions: {}
+
+jobs:
+  betterleaks:
+    permissions:
+      contents: read
+      security-events: write
+    uses: spnngl/.github/.github/workflows/betterleaks.yml@main

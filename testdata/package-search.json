@@ -1,0 +1,79 @@
+{
+  "packages": [
+    {
+      "package_id": "75ee6e00-b4d5-429e-9d82-33ab730081ff",
+      "name": "artifact-hub",
+      "normalized_name": "artifact-hub",
+      "logo_image_id": "35c5d3c7-421e-4b4a-97b0-86f4602a2f59",
+      "stars": 96,
+      "description": "Artifact Hub is a web-based application that enables finding, installing, and publishing Cloud Native packages.",
+      "version": "1.23.0",
+      "app_version": "1.23.0",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "has_values_schema": true,
+      "signed": false,
+      "security_report_summary": {
+        "low": 229,
+        "high": 477,
+        "medium": 530,
+        "unknown": 23,
+        "critical": 9
+      },
+      "all_containers_images_whitelisted": false,
+      "production_organizations_count": 2,
+      "ts": 1783436148,
+      "repository": {
+        "url": "https://artifacthub.github.io/helm-charts/",
+        "cncf": true,
+        "kind": 0,
+        "name": "artifact-hub",
+        "official": true,
+        "display_name": "Artifact Hub",
+        "repository_id": "a032a436-3568-4970-804a-2780f5e9d231",
+        "scanner_disabled": false,
+        "organization_name": "artifacthub",
+        "verified_publisher": true,
+        "organization_display_name": "Artifact Hub"
+      }
+    },
+    {
+      "package_id": "f5107218-6c02-4499-839b-fb29a33ecac4",
+      "name": "ah",
+      "normalized_name": "ah",
+      "logo_image_id": "aa10bdd4-22e9-4147-8111-c58d9131c2ef",
+      "stars": 6,
+      "official": true,
+      "cncf": true,
+      "description": "Artifact Hub command line tool",
+      "version": "latest",
+      "app_version": "1.23.0",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "has_values_schema": false,
+      "signed": false,
+      "security_report_summary": {
+        "low": 28,
+        "high": 42,
+        "medium": 44,
+        "unknown": 4,
+        "critical": 0
+      },
+      "all_containers_images_whitelisted": false,
+      "production_organizations_count": 0,
+      "ts": 1783434400,
+      "repository": {
+        "url": "oci://index.docker.io/artifacthub/ah",
+        "kind": 12,
+        "name": "ah",
+        "official": false,
+        "display_name": "Artifact Hub CLI",
+        "repository_id": "d0201666-b864-44aa-8bc9-a9b5172eb5b0",
+        "scanner_disabled": false,
+        "organization_name": "artifacthub",
+        "verified_publisher": false,
+        "organization_display_name": "Artifact Hub"
+      }
+    }
+  ]
+}
