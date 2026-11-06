@@ -101,7 +101,7 @@ jobs:
     runs-on: ${{ matrix.runner }}
     # Fedora's rpmlint: Ubuntu's extracts the rpm wrong and reports a false no-binary. In a
     # container runner.temp is the host's path, so the steps use relative ones.
-    container: fedora:44@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e
+    container: fedora:46@sha256:78bb31de333664aa76c4bf54306791cd294c0bd4fbcfc4346e2286261de544c4
     permissions:
       contents: read
     steps:
